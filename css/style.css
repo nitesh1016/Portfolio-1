@@ -1,19 +1,26 @@
 body{
     margin: 0;
+    background-color: ghostwhite;
 }
 nav{
-    background-color: orange;
+    background-color: ghostwhite;
     
 }
 nav ul{
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 
 }
 nav ul li{
     list-style-type: none;
     padding: 10px;
+    margin: 20px;
     
     
+}
+#logo{
+    flex: 1;
 }
 a{
     text-decoration: none;
@@ -42,4 +49,12 @@ a:hover{
 .greeting button{
     margin:10px;
     padding: 10px;
+}
+
+@media(max-width:500px)
+{
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
